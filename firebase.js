@@ -13,7 +13,7 @@ const firebaseConfig = {
   authDomain: "blog-website-auth-1a2fc.firebaseapp.com",
   projectId: "blog-website-auth-1a2fc",
   storageBucket: "blog-website-auth-1a2fc.appspot.com",
-  messagingSenderId: "295001712522",
+  messagingSenderId: "295001712522", 
   appId: "1:295001712522:web:09d9553dc96596f506ca73"
 };
 
