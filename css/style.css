@@ -14,6 +14,8 @@ body.home-page {
     text-align: center;
     border-radius: 8px;
      position: relative;
+    z-index: 999;
+    pointer-events: auto;
 }
 
 input {
@@ -178,5 +180,6 @@ textarea {
   color: #444;
   font-size: 14px;
 }
+
 
 
