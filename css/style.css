@@ -13,8 +13,8 @@ body.home-page {
     width: 320px;
     text-align: center;
     border-radius: 8px;
-     position: relative;
-    z-index: 999;
+    position: relative;
+    z-index: 9999;
     pointer-events: auto;
 }
 
@@ -180,6 +180,7 @@ textarea {
   color: #444;
   font-size: 14px;
 }
+
 
 
 
