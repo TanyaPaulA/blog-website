@@ -35,6 +35,8 @@ button {
     border: none;
     border-radius: 4px;
     pointer-events: auto;
+    position: relative;
+    z-index: 10;
 }
 
 button:hover {
@@ -176,4 +178,5 @@ textarea {
   color: #444;
   font-size: 14px;
 }
+
 
