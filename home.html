@@ -5,54 +5,92 @@
     <title>Home | My Blog</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body class="home-page">
 
-    <header class="main-header">
+<header class="main-header">
     <h1>Beginner Coding Mistakes</h1>
     <nav>
         <a href="home.html">Home</a>
         <a href="create.html">Create Blog</a>
         <a href="#" onclick="logout()">Logout</a>
     </nav>
-    </header>
-    <section class="intro">
-     <p>
-       Learning to code can feel confusing and overwhelming at first. Many beginners
-       make small mistakes that slow down their progress without realizing it.
-     </p>
-     <p>
-    This blog is a collection of such mistakes, written from real learning
-    experiences, to help new learners avoid common pitfalls and grow with confidence.
-     </p> 
-     <br>
-     If needed,add your experiences by clicking on Create blog.
+</header>
+
+<section class="intro">
+    <p>
+        Learning to code can feel confusing and overwhelming at first. Many beginners
+        make small mistakes that slow down their progress without realizing it.
+    </p>
+    <p>
+        This blog is a collection of such mistakes, written from real learning
+        experiences, to help new learners avoid common pitfalls and grow with confidence.
+    </p>
+    <p>
+        If needed, add your experiences by clicking on <strong>Create Blog</strong>.
+    </p>
+</section>
+
+<div class="home-container">
+
+    <h2>Welcome to the Blog</h2>
+    <p>
+        Below are blog posts that talk about common beginner mistakes in coding.
+        Click on any blog card to read the full blog.
+    </p>
+
+    <!-- 🔹 DEFAULT BLOGS (VISIBLE TO EVERYONE) -->
+    <section class="default-blogs">
+        <h2>Featured Blogs</h2>
+
+        <div class="blog-grid">
+
+            <div class="blog-card">
+                <img src="ai-generated-8775232_1280.png" alt="Learning too many things">
+                <h3>Trying to Learn Everything at Once</h3>
+                <p>
+                    Beginners often try to learn HTML, CSS, JavaScript, frameworks,
+                    and backend all together. This creates confusion and slows progress.
+                    Focus on one thing at a time.
+                </p>
+            </div>
+
+            <div class="blog-card">
+                <img src="coding-924920_1280.jpg" alt="Copy paste coding">
+                <h3>Copy-Pasting Code Without Understanding</h3>
+                <p>
+                    Copying code from tutorials without understanding logic may work
+                    temporarily, but it prevents real learning. Always try to understand
+                    how and why code works.
+                </p>
+            </div>
+
+        </div>
     </section>
 
-    <div class="home-container">
-    
-    <h2>Welcome to the Blog</h2>
-    <p>Below are blog posts that talk about common beginner mistakes in coding.
-     Click on any blog card to read the full blog.</p>
+    <hr>
 
-    <!-- Blog display area -->
-    <div id="blog-list" class="blog-list"></div>
+    <!-- 🔹 USER CREATED BLOGS (LOCAL STORAGE) -->
+    <section class="user-blogs">
+        <h2>User Created Blogs</h2>
+        <div id="blog-list" class="blog-list"></div>
+    </section>
+
 </div>
 
-    <script type="module" src="js/firebase.js"></script>
-
-    <script src="js/blog.js"></script>
-
-    <footer class="site-footer">
-  <p>
-    Created by <strong>Tanya Paul A</strong>
-  </p>
-  <p>
-    Beginner Coding Mistakes – A personal learning-based blog project
-  </p>
-  <p>
-    Built using HTML, CSS, and JavaScript
-  </p>
+<footer class="site-footer">
+    <p>Created by <strong>Tanya Paul A</strong></p>
+    <p>Beginner Coding Mistakes – A personal learning-based blog project</p>
+    <p>Built using HTML, CSS, and JavaScript</p>
 </footer>
+
+<!-- Firebase Auth -->
+<script type="module" src="js/firebase.js"></script>
+
+<!-- Blog Logic -->
+<script src="js/blog.js"></script>
 
 </body>
 </html>
+
+
