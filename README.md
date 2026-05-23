@@ -17,7 +17,7 @@ This project focuses on understanding how basic web technologies work, along wit
 - JavaScript  
 - Firebase Authentication  
 - GitHub Pages
-- 
+  
 ## How the Website Works
 
 - Users log in using Google authentication  
